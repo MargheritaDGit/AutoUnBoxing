@@ -11,7 +11,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        int risultato1 = printSum(40,50);
+
+        Integer unbox = 89; //manuale a boxing
+
+
+        int risultato1 = printSum(40, 50);
         System.out.println(risultato1);
 
         Integer resAutobox1 = risultato1; //reaAutobox è variabile di tipo Integer
@@ -22,7 +26,7 @@ public class Main {
         Character resAutobox2 = risultato2;
 
 
-        Integer risultato3 = printSumInteger(7,8);
+        Integer risultato3 = printSumInteger(7, 8);
         System.out.println(risultato3);
         int resUnbox3 = risultato3;
 
@@ -38,17 +42,21 @@ public class Main {
 
 
     }
-    public static int printSum(int a, int b) {
-      return a+b;
+
+    public static Integer printSum(int a, int b) {
+        return a + b;
     }
+
     public static char printChar(char c) {
-      return c;
+        return c;
     }
-    public static Integer printSumInteger(Integer x, Integer y) {
-       return x+y;
+
+    public static int printSumInteger(Integer x, Integer y) { //unboxing di integer e torna primitivo
+        return x + y;
     }
+
     public static Character printCharacter(Character ch) {
-       return ch;
+        return ch;
     }
 }
 
